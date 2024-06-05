@@ -31,7 +31,7 @@ export const sendEmail = async (options) => {
         <body style="background-color: #F2F5F8; margin: 0; padding: 20px 0px; font-family: Arial, sans-serif;">
             <div style="max-width: 600px; width: 90%; margin: 20px auto 10px auto; padding: 0px; background-color: #ffffff; border-top: 5px solid #0233E4;">
                 <div style="max-width: 80%; width: 100%; padding: 15px 0px; border-bottom: 1px solid #ebebeb; margin:auto">
-                       <img src="https://cdn.logo.com/hotlink-ok/logo-social.png" style="margin: auto; display: flex; height: 55px; max-width: 180px; object-fit: contain; object-position: center;" alt="proptexx">
+                       <a href="/" style="font-weight:bold; font-size:80px; text-decoration:none;" >CruiseWheel</a>
                 </div>
                 <div style="padding: 40px 20px;">
                   <br/>

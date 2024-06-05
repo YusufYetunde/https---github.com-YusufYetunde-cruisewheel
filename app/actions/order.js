@@ -17,7 +17,7 @@ export const orderedMail = async (id) => {
 
     await sendEmail({
       order: getOrder,
-      email: "cruisewheel@gmail.com.com",
+      email: "cruisewheel@gmail.com",
       subject: "Yetunde from CruiseWheel",
       message: `hello there, you have booking`,
     });
