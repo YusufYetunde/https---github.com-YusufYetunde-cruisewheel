@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../constants/motion";
 import { useRouter, useSearchParams } from "next/navigation";
+import Image from "next/image";
 
 const InsightCard = ({ imgUrl, title, subtitle, index, isForm, form, price }) => {
   const searchParams = useSearchParams();
@@ -12,7 +13,7 @@ const InsightCard = ({ imgUrl, title, subtitle, index, isForm, form, price }) =>
       variants={fadeIn("up", "string", index * 0.5, 1)}
       className="flex justify-center md:flex-row flex-col gap-4"
     >
-      <img
+      <Image
         src={imgUrl}
         className="md:w-[350px] w-full h-[250px] rounded-[32px] object-cover"
         alt=""

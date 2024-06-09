@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Banners from "../components/Banner";
 import Subfooter from "../components/SubFooter";
 import React from "react";
@@ -19,12 +20,12 @@ const Local = () => {
             <p className="leading-6 text-lg text-slate-400">
               Cruise Wheel understands the significance of transportation for your special occasions. <br />
               <br />
-              Our fleet of vehicles is meticulously maintained to ensure a flawless appearance, and we'll plan your route to ensure punctuality. We pay attention to every detail, so don't hesitate to let us know if you require any additional services, such as decorations, to enhance your journey's joy. <br />
+              Our fleet of vehicles is meticulously maintained to ensure a flawless appearance, and we will plan your route to ensure punctuality. We pay attention to every detail, so do not hesitate to let us know if you require any additional services, such as decorations, to enhance your journey joy. <br />
               <br />
               Personalize your experience with us and transform every ride into a truly memorable one.
             </p>
           </div>
-          <img src="/local.jpeg" className="w-full h-full" alt="" />
+          <Image src="/local.jpeg" className="w-full h-full" alt="" />
         </div>
         <h2 className="text-center text-md md:text-4xl text-slate-500 my-16">
           Whether you desire luxurious indulgence or spacious convenience, our versatile fleet offers the perfect ride for any occasion.

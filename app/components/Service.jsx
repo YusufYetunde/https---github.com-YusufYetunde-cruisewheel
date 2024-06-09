@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { staggerContainer } from "../constants/motion";
 import TitleText from "./TitleText";
 import styles from "../constants/styles";
+import Image from "next/image";
 
 const Service = ({ service }) => {
   return (
@@ -24,7 +25,7 @@ const Service = ({ service }) => {
             {service.text}
           </p>
           <div className="w-11/12 lg:w-10/12">
-            <img
+            <Image
               src={service.img}
               className="w-full h-full object-contain"
               alt=""

@@ -1,4 +1,5 @@
 'use client';
+import Image from 'next/image';
 import React, { useState, useEffect, useRef } from 'react';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa6';
 
@@ -57,7 +58,7 @@ const ImageSlider = () => {
                             key={index}
                             className={`absolute inset-0 transition-opacity duration-1000 ${index === current ? 'opacity-100' : 'opacity-0'}`}
                         >
-                            <img src={img.src} alt="" className="w-full h-full object-cover" />
+                            <Image src={img.src} alt="" className="w-full h-full object-cover" />
                             <div className="absolute top-20 left-10 md:left-1/2 md:transform md:-translate-x-1/2 md:text-center text-left max-w-2xl">
                                 <h2 className="text-5xl font-bold">{img.title}</h2>
                                 <p className="text-3xl text-third-color">{img.type}</p>
@@ -70,7 +71,7 @@ const ImageSlider = () => {
                 <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 flex gap-4">
                     {images.map((img, index) => (
                         <div key={index} className="w-24 h-32">
-                            <img src={img.src} alt="" className="w-full h-full object-cover rounded-lg shadow-lg" />
+                            <Image src={img.src} alt="" className="w-full h-full object-cover rounded-lg shadow-lg" />
                         </div>
                     ))}
                 </div>

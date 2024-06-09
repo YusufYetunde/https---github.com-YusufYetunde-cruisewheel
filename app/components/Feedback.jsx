@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "../constants/motion";
 import styles from "../constants/styles";
+import Image from "next/image";
 
 const Feedback = () => {
   return (
@@ -32,7 +33,7 @@ const Feedback = () => {
           </p>
         </motion.div>
         <motion.div variants={fadeIn("left", "tween", 0.2, 1)}>
-          <img
+          <Image
             src="/aboutus.png"
             className="px-0 lg:px-4 xl:px-14 w-full h-auto object-cover rounded-3xl"
             alt=""

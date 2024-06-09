@@ -1,6 +1,7 @@
 import React from "react";
 import TitleText from "./TitleText";
 import { homeCards } from "../data";
+import Image from "next/image";
 
 const Objective = () => {
   return (
@@ -15,7 +16,7 @@ const Objective = () => {
           {homeCards?.map((car, index) => (
             <div key={index} className="rounded shadow-lg bg0-white">
               <div className="w-full relative">
-                <img src={car.img} alt="" className="w-full object-cover" />
+                <Image src={car.img} alt="" className="w-full object-cover" />
               </div>
               <div className="font-bold text-xl mb-2 text-third-color p-2">
                 {car.title}

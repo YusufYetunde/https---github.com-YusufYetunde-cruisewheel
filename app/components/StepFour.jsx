@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { getDistance } from "../lib/distance";
 import { PaymentMethod } from "../lib/strip";
 import { useRouter } from "next/navigation";
@@ -46,7 +47,7 @@ const StepFour = ({ form }) => {
     <div className="max-w-[1150px] mx-auto">
       <div className="grid grid-cols-1 p-4 mt-10">
         <div className="relative w-full mb-4 rounded overflow-hidden">
-          <img src={imgUrl} className="object-cover" alt="" />
+          <Image src={imgUrl} className="object-cover" alt="" />
         </div>
         <div className="pt-8">
           <div className="flex justify-between items-center border-b mb-5 pb-5">
