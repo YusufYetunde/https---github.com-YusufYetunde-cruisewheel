@@ -88,3 +88,53 @@ const StepFour = ({ form }) => {
 };
 
 export default StepFour;
+
+
+
+
+
+
+
+
+
+
+const [getCities, setGetCities] = useState([]);
+  const [getSource, setSource] = useState(null);
+  const [getDestination, setDestination] = useState(null);
+  const { control, handleSubmit, watch, setError, clearErrors } = useForm();
+  const router = useRouter();
+
+  
+  const dob = watch("dob");
+  
+
+  useEffect(() => {
+    const fetchCities = async () => {
+      const states = State.getStatesOfCountry("NG");
+      let cities = [];
+      states.forEach((state) => {
+        const stateCities = City.getCitiesOfState("NG", state.isoCode);
+        cities = [...cities, ...stateCities];
+      });
+      setGetCities(cities);
+    };
+
+    fetchCities();
+  }, []);
+
+  useEffect(() => {
+    if (dob) {
+      const age = differenceInYears(new Date(), new Date(dob));
+      if (age < 16) {
+        setError("dob", { type: "manual", message: "Not up to age" });
+        alert("Not up to age");
+      } else {
+        clearErrors("dob");
+      }
+    }
+  }, [dob, setError, clearErrors]);
+
+  const Map = useMemo(
+    () => dynamic(() => import("./Map")),
+    [getSource, getDestination]
+  );

@@ -2,6 +2,7 @@ import Image from "next/image";
 import Banners from "../components/Banner";
 import Subfooter from "../components/SubFooter";
 import React from "react";
+import Local from "../../public/local.jpeg";
 
 const Local = () => {
   return (
@@ -25,7 +26,7 @@ const Local = () => {
               Personalize your experience with us and transform every ride into a truly memorable one.
             </p>
           </div>
-          <Image src="/local.jpeg" className="w-full h-full" alt="" />
+          <Image src={Local} className="w-full h-full" alt="" />
         </div>
         <h2 className="text-center text-md md:text-4xl text-slate-500 my-16">
           Whether you desire luxurious indulgence or spacious convenience, our versatile fleet offers the perfect ride for any occasion.
