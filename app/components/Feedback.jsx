@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "../constants/motion";
 import styles from "../constants/styles";
 import Image from "next/image";
+import aboutUs from "../../public/aboutus.png"
 
 const Feedback = () => {
   return (
@@ -34,7 +35,7 @@ const Feedback = () => {
         </motion.div>
         <motion.div variants={fadeIn("left", "tween", 0.2, 1)}>
           <Image
-            src="/aboutus.png"
+            src={aboutUs}
             className="px-0 lg:px-4 xl:px-14 w-full h-auto object-cover rounded-3xl"
             alt=""
           />

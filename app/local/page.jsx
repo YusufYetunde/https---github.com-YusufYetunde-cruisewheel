@@ -2,7 +2,6 @@ import Image from "next/image";
 import Banners from "../components/Banner";
 import Subfooter from "../components/SubFooter";
 import React from "react";
-import Local from "../../public/local.jpeg";
 
 const Local = () => {
   return (
