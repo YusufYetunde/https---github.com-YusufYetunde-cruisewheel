@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../constants/motion";
 import { useRouter, useSearchParams } from "next/navigation";
-import Image from "next/image";
+
 
 const InsightCard = ({ imgUrl, title, subtitle, index, isForm, form, price }) => {
   const searchParams = useSearchParams();
